@@ -33,7 +33,7 @@ jobs:
         uses: pnpm/action-setup@v2
         with:
           run_install: |
-            - args: --frozen-lockfile
+            - args: [--frozen-lockfile]
 
       - name: yarn install
         if: env.NODE_PKG_MANAGER == 'yarn'
